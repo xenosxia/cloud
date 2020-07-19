@@ -1,0 +1,21 @@
+server:
+  port: 28766
+
+spring:
+  application:
+    name: turbine
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://test:123456@localhost:28761/eureka/
+
+  instance:
+    preferIpAddress: true #以IP地址注册到服务中心，相互注册使用IP地址
+turbine:
+  app-config: consumer-feign,consumer
+  aggregator:
+    clusterConfig: default
+  clusterNameExpression: new String("default")
+  combine-host: true
+  instanceUrlSuffix: actuator/hystrix.stream

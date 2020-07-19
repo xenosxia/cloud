@@ -1,0 +1,22 @@
+server:
+  port: 28763
+
+spring:
+  application:
+    name: producer
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://test:123456@localhost:28761/eureka/
+  instance:
+    prefer-ip-address: true
+    instanceId: ${spring.cloud.client.hostname}:${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      cors:
+        allowed-origins: "*"
+        allowed-methods: "*"

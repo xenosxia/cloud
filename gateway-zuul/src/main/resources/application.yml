@@ -1,0 +1,28 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://test:123456@localhost:28761/eureka/
+
+  instance:
+    prefer-ip-address: true
+server:
+  port: 28769
+spring:
+  application:
+    name: gateway-zuul
+
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: consumer
+    api-b:
+      path: /api-b/**
+      serviceId: consumer-feign
+#  这两个参数在使用Service ID配置Zuul的路由规则时无效，只适用于指定微服务的url配置路由的情景。
+  host:
+    maxTotalConnections: 2000
+    maxPerRouteConnections: 20
+  semaphore:
+    max-semaphores: 2000
+  #prefix: /rest
