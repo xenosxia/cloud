@@ -1,0 +1,264 @@
+2020-07-22 20:39:15.876  INFO [gateway-zuul,,,] 33100 --- [main] c.x.gatewayzuul.GatewayZuulApplication   : No active profile set, falling back to default profiles: default
+2020-07-22 20:39:16.910  WARN [gateway-zuul,,,] 33100 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-07-22 20:39:16.978  WARN [gateway-zuul,,,] 33100 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-07-22 20:39:17.206  INFO [gateway-zuul,,,] 33100 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8e6e7c6a-05f2-3b22-b392-7c987f451c47
+2020-07-22 20:39:17.915  INFO [gateway-zuul,,,] 33100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 28769 (http)
+2020-07-22 20:39:17.926  INFO [gateway-zuul,,,] 33100 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-22 20:39:17.926  INFO [gateway-zuul,,,] 33100 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-22 20:39:18.178  INFO [gateway-zuul,,,] 33100 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-22 20:39:18.179  INFO [gateway-zuul,,,] 33100 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2283 ms
+2020-07-22 20:39:18.337  WARN [gateway-zuul,,,] 33100 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-07-22 20:39:18.337  INFO [gateway-zuul,,,] 33100 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-22 20:39:18.349  INFO [gateway-zuul,,,] 33100 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2fb25f4c
+2020-07-22 20:39:21.636  WARN [gateway-zuul,,,] 33100 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-07-22 20:39:21.637  INFO [gateway-zuul,,,] 33100 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-22 20:39:22.122  INFO [gateway-zuul,,,] 33100 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-22 20:39:23.253  INFO [gateway-zuul,,,] 33100 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-07-22 20:39:23.428  WARN [gateway-zuul,,,] 33100 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-07-22 20:39:23.600  INFO [gateway-zuul,,,] 33100 --- [main] o.s.c.n.zuul.ZuulFilterInitializer       : Starting filter initializer
+2020-07-22 20:39:23.690  INFO [gateway-zuul,,,] 33100 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-22 20:39:23.779  INFO [gateway-zuul,,,] 33100 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-07-22 20:39:23.811  INFO [gateway-zuul,,,] 33100 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-07-22 20:39:23.865  INFO [gateway-zuul,,,] 33100 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-07-22 20:39:23.865  INFO [gateway-zuul,,,] 33100 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-07-22 20:39:23.981  INFO [gateway-zuul,,,] 33100 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-07-22 20:39:23.981  INFO [gateway-zuul,,,] 33100 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-07-22 20:39:24.183  INFO [gateway-zuul,,,] 33100 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-22 20:39:24.612  INFO [gateway-zuul,,,] 33100 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-07-22 20:39:24.613  INFO [gateway-zuul,,,] 33100 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-07-22 20:39:24.613  INFO [gateway-zuul,,,] 33100 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-07-22 20:39:24.613  INFO [gateway-zuul,,,] 33100 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-07-22 20:39:24.613  INFO [gateway-zuul,,,] 33100 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-07-22 20:39:24.613  INFO [gateway-zuul,,,] 33100 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-07-22 20:39:24.613  INFO [gateway-zuul,,,] 33100 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-07-22 20:39:24.866  INFO [gateway-zuul,,,] 33100 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-07-22 20:39:24.868  INFO [gateway-zuul,,,] 33100 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-07-22 20:39:24.870  INFO [gateway-zuul,,,] 33100 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-07-22 20:39:24.873  INFO [gateway-zuul,,,] 33100 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1595421564872 with initial instances count: 2
+2020-07-22 20:39:24.882  INFO [gateway-zuul,,,] 33100 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application GATEWAY-ZUUL with eureka with status UP
+2020-07-22 20:39:24.883  INFO [gateway-zuul,,,] 33100 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1595421564883, current=UP, previous=STARTING]
+2020-07-22 20:39:24.885  INFO [gateway-zuul,,,] 33100 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAY-ZUUL/LAPTOP-CNCLKMAV:gateway-zuul:28769: registering service...
+2020-07-22 20:39:24.913  INFO [gateway-zuul,,,] 33100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 28769 (http) with context path ''
+2020-07-22 20:39:24.914  INFO [gateway-zuul,,,] 33100 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 28769
+2020-07-22 20:39:24.921  INFO [gateway-zuul,,,] 33100 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAY-ZUUL/LAPTOP-CNCLKMAV:gateway-zuul:28769 - registration status: 204
+2020-07-22 20:39:25.719  INFO [gateway-zuul,,,] 33100 --- [main] c.x.gatewayzuul.GatewayZuulApplication   : Started GatewayZuulApplication in 12.034 seconds (JVM running for 12.947)
+2020-07-22 20:39:26.365  INFO [gateway-zuul,,,] 33100 --- [RMI TCP Connection(3)-192.168.80.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-22 20:39:26.365  INFO [gateway-zuul,,,] 33100 --- [RMI TCP Connection(3)-192.168.80.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-22 20:39:26.378  INFO [gateway-zuul,,,] 33100 --- [RMI TCP Connection(3)-192.168.80.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2020-07-22 20:39:30.354  INFO [gateway-zuul,,,] 33100 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as cd70bf36be63
+2020-07-22 20:41:17.468  INFO [gateway-zuul,,,] 28932 --- [main] c.x.gatewayzuul.GatewayZuulApplication   : No active profile set, falling back to default profiles: default
+2020-07-22 20:41:18.416  WARN [gateway-zuul,,,] 28932 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-07-22 20:41:18.469  WARN [gateway-zuul,,,] 28932 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-07-22 20:41:18.639  INFO [gateway-zuul,,,] 28932 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8e6e7c6a-05f2-3b22-b392-7c987f451c47
+2020-07-22 20:41:19.256  INFO [gateway-zuul,,,] 28932 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 28769 (http)
+2020-07-22 20:41:19.320  INFO [gateway-zuul,,,] 28932 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-22 20:41:19.320  INFO [gateway-zuul,,,] 28932 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-22 20:41:19.458  INFO [gateway-zuul,,,] 28932 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-22 20:41:19.459  INFO [gateway-zuul,,,] 28932 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1971 ms
+2020-07-22 20:41:19.601  WARN [gateway-zuul,,,] 28932 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-07-22 20:41:19.602  INFO [gateway-zuul,,,] 28932 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-22 20:41:19.613  INFO [gateway-zuul,,,] 28932 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3135bf25
+2020-07-22 20:41:22.082  INFO [gateway-zuul,,,] 28932 --- [main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2020-07-22 20:41:22.140  WARN [gateway-zuul,,,] 28932 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-07-22 20:41:22.140  INFO [gateway-zuul,,,] 28932 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-22 20:41:22.374  INFO [gateway-zuul,,,] 28932 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-22 20:41:23.267  INFO [gateway-zuul,,,] 28932 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-07-22 20:41:23.438  WARN [gateway-zuul,,,] 28932 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-07-22 20:41:23.590  INFO [gateway-zuul,,,] 28932 --- [main] o.s.c.n.zuul.ZuulFilterInitializer       : Starting filter initializer
+2020-07-22 20:41:23.678  INFO [gateway-zuul,,,] 28932 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 21 endpoint(s) beneath base path '/actuator'
+2020-07-22 20:41:23.769  INFO [gateway-zuul,,,] 28932 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-07-22 20:41:23.799  INFO [gateway-zuul,,,] 28932 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-07-22 20:41:23.848  INFO [gateway-zuul,,,] 28932 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-07-22 20:41:23.848  INFO [gateway-zuul,,,] 28932 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-07-22 20:41:23.946  INFO [gateway-zuul,,,] 28932 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-07-22 20:41:23.947  INFO [gateway-zuul,,,] 28932 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-07-22 20:41:24.099  INFO [gateway-zuul,,,] 28932 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-22 20:41:24.502  INFO [gateway-zuul,,,] 28932 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-07-22 20:41:24.503  INFO [gateway-zuul,,,] 28932 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-07-22 20:41:24.503  INFO [gateway-zuul,,,] 28932 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-07-22 20:41:24.503  INFO [gateway-zuul,,,] 28932 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-07-22 20:41:24.503  INFO [gateway-zuul,,,] 28932 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-07-22 20:41:24.503  INFO [gateway-zuul,,,] 28932 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-07-22 20:41:24.503  INFO [gateway-zuul,,,] 28932 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-07-22 20:41:24.741  INFO [gateway-zuul,,,] 28932 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-07-22 20:41:24.743  INFO [gateway-zuul,,,] 28932 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-07-22 20:41:24.745  INFO [gateway-zuul,,,] 28932 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-07-22 20:41:24.748  INFO [gateway-zuul,,,] 28932 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1595421684747 with initial instances count: 3
+2020-07-22 20:41:24.756  INFO [gateway-zuul,,,] 28932 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application GATEWAY-ZUUL with eureka with status UP
+2020-07-22 20:41:24.756  INFO [gateway-zuul,,,] 28932 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1595421684756, current=UP, previous=STARTING]
+2020-07-22 20:41:24.758  INFO [gateway-zuul,,,] 28932 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAY-ZUUL/LAPTOP-CNCLKMAV:gateway-zuul:28769: registering service...
+2020-07-22 20:41:24.786  INFO [gateway-zuul,,,] 28932 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 28769 (http) with context path ''
+2020-07-22 20:41:24.788  INFO [gateway-zuul,,,] 28932 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 28769
+2020-07-22 20:41:24.794  INFO [gateway-zuul,,,] 28932 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAY-ZUUL/LAPTOP-CNCLKMAV:gateway-zuul:28769 - registration status: 204
+2020-07-22 20:41:25.086  INFO [gateway-zuul,,,] 28932 --- [http-nio-28769-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-22 20:41:25.086  INFO [gateway-zuul,,,] 28932 --- [http-nio-28769-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-22 20:41:25.102  INFO [gateway-zuul,,,] 28932 --- [http-nio-28769-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-07-22 20:41:25.825  INFO [gateway-zuul,,,] 28932 --- [main] c.x.gatewayzuul.GatewayZuulApplication   : Started GatewayZuulApplication in 11.22 seconds (JVM running for 12.134)
+2020-07-22 20:41:30.477  INFO [gateway-zuul,,,] 28932 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as cd70bf36be63
+2020-07-22 20:46:24.507  INFO [gateway-zuul,,,] 28932 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-22 20:47:23.910  INFO [gateway-zuul,,,] 31492 --- [main] c.x.gatewayzuul.GatewayZuulApplication   : No active profile set, falling back to default profiles: default
+2020-07-22 20:47:24.494  WARN [gateway-zuul,,,] 31492 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-07-22 20:47:24.531  WARN [gateway-zuul,,,] 31492 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-07-22 20:47:24.644  INFO [gateway-zuul,,,] 31492 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8e6e7c6a-05f2-3b22-b392-7c987f451c47
+2020-07-22 20:47:25.043  INFO [gateway-zuul,,,] 31492 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 28769 (http)
+2020-07-22 20:47:25.130  INFO [gateway-zuul,,,] 31492 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-22 20:47:25.131  INFO [gateway-zuul,,,] 31492 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-22 20:47:25.211  INFO [gateway-zuul,,,] 31492 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-22 20:47:25.212  INFO [gateway-zuul,,,] 31492 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1289 ms
+2020-07-22 20:47:25.301  WARN [gateway-zuul,,,] 31492 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-07-22 20:47:25.301  INFO [gateway-zuul,,,] 31492 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-22 20:47:25.307  INFO [gateway-zuul,,,] 31492 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4a8ffd75
+2020-07-22 20:47:27.051  INFO [gateway-zuul,,,] 31492 --- [main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2020-07-22 20:47:27.106  WARN [gateway-zuul,,,] 31492 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-07-22 20:47:27.106  INFO [gateway-zuul,,,] 31492 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-22 20:47:27.374  INFO [gateway-zuul,,,] 31492 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-22 20:47:28.373  INFO [gateway-zuul,,,] 31492 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-07-22 20:47:28.538  WARN [gateway-zuul,,,] 31492 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-07-22 20:47:28.699  INFO [gateway-zuul,,,] 31492 --- [main] o.s.c.n.zuul.ZuulFilterInitializer       : Starting filter initializer
+2020-07-22 20:47:28.785  INFO [gateway-zuul,,,] 31492 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 21 endpoint(s) beneath base path '/actuator'
+2020-07-22 20:47:28.877  INFO [gateway-zuul,,,] 31492 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-07-22 20:47:28.908  INFO [gateway-zuul,,,] 31492 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-07-22 20:47:28.955  INFO [gateway-zuul,,,] 31492 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-07-22 20:47:28.956  INFO [gateway-zuul,,,] 31492 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-07-22 20:47:29.057  INFO [gateway-zuul,,,] 31492 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-07-22 20:47:29.057  INFO [gateway-zuul,,,] 31492 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-07-22 20:47:29.223  INFO [gateway-zuul,,,] 31492 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-22 20:47:29.652  INFO [gateway-zuul,,,] 31492 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-07-22 20:47:29.652  INFO [gateway-zuul,,,] 31492 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-07-22 20:47:29.653  INFO [gateway-zuul,,,] 31492 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-07-22 20:47:29.653  INFO [gateway-zuul,,,] 31492 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-07-22 20:47:29.653  INFO [gateway-zuul,,,] 31492 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-07-22 20:47:29.653  INFO [gateway-zuul,,,] 31492 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-07-22 20:47:29.653  INFO [gateway-zuul,,,] 31492 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-07-22 20:47:29.934  INFO [gateway-zuul,,,] 31492 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-07-22 20:47:29.937  INFO [gateway-zuul,,,] 31492 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-07-22 20:47:29.939  INFO [gateway-zuul,,,] 31492 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-07-22 20:47:29.943  INFO [gateway-zuul,,,] 31492 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1595422049942 with initial instances count: 3
+2020-07-22 20:47:29.951  INFO [gateway-zuul,,,] 31492 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application GATEWAY-ZUUL with eureka with status UP
+2020-07-22 20:47:29.951  INFO [gateway-zuul,,,] 31492 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1595422049951, current=UP, previous=STARTING]
+2020-07-22 20:47:29.953  INFO [gateway-zuul,,,] 31492 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAY-ZUUL/LAPTOP-CNCLKMAV:gateway-zuul:28769: registering service...
+2020-07-22 20:47:29.984  INFO [gateway-zuul,,,] 31492 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 28769 (http) with context path ''
+2020-07-22 20:47:29.985  INFO [gateway-zuul,,,] 31492 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 28769
+2020-07-22 20:47:29.993  INFO [gateway-zuul,,,] 31492 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAY-ZUUL/LAPTOP-CNCLKMAV:gateway-zuul:28769 - registration status: 204
+2020-07-22 20:47:30.781  INFO [gateway-zuul,,,] 31492 --- [main] c.x.gatewayzuul.GatewayZuulApplication   : Started GatewayZuulApplication in 8.768 seconds (JVM running for 9.679)
+2020-07-22 20:47:31.654  INFO [gateway-zuul,,,] 31492 --- [RMI TCP Connection(1)-192.168.80.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-22 20:47:31.655  INFO [gateway-zuul,,,] 31492 --- [RMI TCP Connection(1)-192.168.80.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-22 20:47:31.669  INFO [gateway-zuul,,,] 31492 --- [RMI TCP Connection(1)-192.168.80.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2020-07-22 20:47:35.435  INFO [gateway-zuul,,,] 31492 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as cd70bf36be63
+2020-07-22 20:52:29.656  INFO [gateway-zuul,,,] 31492 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-22 20:57:29.657  INFO [gateway-zuul,,,] 31492 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-22 21:02:29.659  INFO [gateway-zuul,,,] 31492 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-22 21:07:29.660  INFO [gateway-zuul,,,] 31492 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-22 21:12:29.661  INFO [gateway-zuul,,,] 31492 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-22 21:17:29.663  INFO [gateway-zuul,,,] 31492 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-22 21:22:29.664  INFO [gateway-zuul,,,] 31492 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-22 21:27:29.665  INFO [gateway-zuul,,,] 31492 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-22 21:28:39.387  WARN [gateway-zuul,,,] 31492 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=gateway-zuul, managementUrl=http://LAPTOP-CNCLKMAV:28769/actuator, healthUrl=http://LAPTOP-CNCLKMAV:28769/actuator/health, serviceUrl=http://LAPTOP-CNCLKMAV:28769/) at spring-boot-admin ([http://localhost:29091/instances]): I/O error on POST request for "http://localhost:29091/instances": Connect to localhost:29091 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:29091 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect. Further attempts are logged on DEBUG level
+2020-07-22 21:32:29.666  INFO [gateway-zuul,,,] 31492 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-22 21:34:42.434  INFO [gateway-zuul,,,] 33348 --- [main] c.x.gatewayzuul.GatewayZuulApplication   : No active profile set, falling back to default profiles: default
+2020-07-22 21:34:43.409  WARN [gateway-zuul,,,] 33348 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-07-22 21:34:43.471  WARN [gateway-zuul,,,] 33348 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-07-22 21:34:43.671  INFO [gateway-zuul,,,] 33348 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8e6e7c6a-05f2-3b22-b392-7c987f451c47
+2020-07-22 21:34:44.358  INFO [gateway-zuul,,,] 33348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 28769 (http)
+2020-07-22 21:34:44.369  INFO [gateway-zuul,,,] 33348 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-22 21:34:44.369  INFO [gateway-zuul,,,] 33348 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-22 21:34:44.632  INFO [gateway-zuul,,,] 33348 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-22 21:34:44.633  INFO [gateway-zuul,,,] 33348 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2178 ms
+2020-07-22 21:34:44.822  WARN [gateway-zuul,,,] 33348 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-07-22 21:34:44.822  INFO [gateway-zuul,,,] 33348 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-22 21:34:44.838  INFO [gateway-zuul,,,] 33348 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@414f87a9
+2020-07-22 21:34:47.405  INFO [gateway-zuul,,,] 33348 --- [main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2020-07-22 21:34:47.463  WARN [gateway-zuul,,,] 33348 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-07-22 21:34:47.463  INFO [gateway-zuul,,,] 33348 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-22 21:34:47.699  INFO [gateway-zuul,,,] 33348 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-22 21:34:48.622  INFO [gateway-zuul,,,] 33348 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-07-22 21:34:48.799  WARN [gateway-zuul,,,] 33348 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-07-22 21:34:48.968  INFO [gateway-zuul,,,] 33348 --- [main] o.s.c.n.zuul.ZuulFilterInitializer       : Starting filter initializer
+2020-07-22 21:34:49.057  INFO [gateway-zuul,,,] 33348 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 21 endpoint(s) beneath base path '/actuator'
+2020-07-22 21:34:49.151  INFO [gateway-zuul,,,] 33348 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-07-22 21:34:49.181  INFO [gateway-zuul,,,] 33348 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-07-22 21:34:49.229  INFO [gateway-zuul,,,] 33348 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-07-22 21:34:49.229  INFO [gateway-zuul,,,] 33348 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-07-22 21:34:49.332  INFO [gateway-zuul,,,] 33348 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-07-22 21:34:49.333  INFO [gateway-zuul,,,] 33348 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-07-22 21:34:49.487  INFO [gateway-zuul,,,] 33348 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-22 21:34:49.880  INFO [gateway-zuul,,,] 33348 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-07-22 21:34:49.881  INFO [gateway-zuul,,,] 33348 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-07-22 21:34:49.881  INFO [gateway-zuul,,,] 33348 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-07-22 21:34:49.881  INFO [gateway-zuul,,,] 33348 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-07-22 21:34:49.881  INFO [gateway-zuul,,,] 33348 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-07-22 21:34:49.881  INFO [gateway-zuul,,,] 33348 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-07-22 21:34:49.881  INFO [gateway-zuul,,,] 33348 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-07-22 21:34:50.146  INFO [gateway-zuul,,,] 33348 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-07-22 21:34:50.148  INFO [gateway-zuul,,,] 33348 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-07-22 21:34:50.150  INFO [gateway-zuul,,,] 33348 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-07-22 21:34:50.153  INFO [gateway-zuul,,,] 33348 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1595424890152 with initial instances count: 3
+2020-07-22 21:34:50.161  INFO [gateway-zuul,,,] 33348 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application GATEWAY-ZUUL with eureka with status UP
+2020-07-22 21:34:50.161  INFO [gateway-zuul,,,] 33348 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1595424890161, current=UP, previous=STARTING]
+2020-07-22 21:34:50.163  INFO [gateway-zuul,,,] 33348 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAY-ZUUL/LAPTOP-CNCLKMAV:gateway-zuul:28769: registering service...
+2020-07-22 21:34:50.189  INFO [gateway-zuul,,,] 33348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 28769 (http) with context path ''
+2020-07-22 21:34:50.190  INFO [gateway-zuul,,,] 33348 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 28769
+2020-07-22 21:34:50.196  INFO [gateway-zuul,,,] 33348 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAY-ZUUL/LAPTOP-CNCLKMAV:gateway-zuul:28769 - registration status: 204
+2020-07-22 21:34:50.960  INFO [gateway-zuul,,,] 33348 --- [main] c.x.gatewayzuul.GatewayZuulApplication   : Started GatewayZuulApplication in 13.219 seconds (JVM running for 15.44)
+2020-07-22 21:34:51.796  INFO [gateway-zuul,,,] 33348 --- [RMI TCP Connection(2)-192.168.80.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-22 21:34:51.796  INFO [gateway-zuul,,,] 33348 --- [RMI TCP Connection(2)-192.168.80.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-22 21:34:51.812  INFO [gateway-zuul,,,] 33348 --- [RMI TCP Connection(2)-192.168.80.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-07-22 21:34:55.624  WARN [gateway-zuul,,,] 33348 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=gateway-zuul, managementUrl=http://LAPTOP-CNCLKMAV:28769/actuator, healthUrl=http://LAPTOP-CNCLKMAV:28769/actuator/health, serviceUrl=http://LAPTOP-CNCLKMAV:28769/) at spring-boot-admin ([http://localhost:29091/instances]): 401 : [{"timestamp":"2020-07-22T13:34:55.617+00:00","status":401,"error":"Unauthorized","message":"","path":"/instances"}]. Further attempts are logged on DEBUG level
+2020-07-22 21:39:49.905  INFO [gateway-zuul,,,] 33348 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-22 21:44:49.907  INFO [gateway-zuul,,,] 33348 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-22 21:49:49.908  INFO [gateway-zuul,,,] 33348 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-22 21:52:10.862  INFO [gateway-zuul,,,] 31696 --- [main] c.x.gatewayzuul.GatewayZuulApplication   : No active profile set, falling back to default profiles: default
+2020-07-22 21:52:12.199  WARN [gateway-zuul,,,] 31696 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-07-22 21:52:12.282  WARN [gateway-zuul,,,] 31696 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-07-22 21:52:12.540  INFO [gateway-zuul,,,] 31696 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8e6e7c6a-05f2-3b22-b392-7c987f451c47
+2020-07-22 21:52:13.503  INFO [gateway-zuul,,,] 31696 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 28769 (http)
+2020-07-22 21:52:13.516  INFO [gateway-zuul,,,] 31696 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-22 21:52:13.517  INFO [gateway-zuul,,,] 31696 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-22 21:52:13.819  INFO [gateway-zuul,,,] 31696 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-22 21:52:13.819  INFO [gateway-zuul,,,] 31696 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2921 ms
+2020-07-22 21:52:14.040  WARN [gateway-zuul,,,] 31696 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-07-22 21:52:14.041  INFO [gateway-zuul,,,] 31696 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-22 21:52:14.054  INFO [gateway-zuul,,,] 31696 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1ddc6db2
+2020-07-22 21:52:18.332  INFO [gateway-zuul,,,] 31696 --- [main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2020-07-22 21:52:18.412  WARN [gateway-zuul,,,] 31696 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-07-22 21:52:18.413  INFO [gateway-zuul,,,] 31696 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-22 21:52:18.729  INFO [gateway-zuul,,,] 31696 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-22 21:52:20.013  INFO [gateway-zuul,,,] 31696 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-07-22 21:52:20.208  WARN [gateway-zuul,,,] 31696 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-07-22 21:52:20.408  INFO [gateway-zuul,,,] 31696 --- [main] o.s.c.n.zuul.ZuulFilterInitializer       : Starting filter initializer
+2020-07-22 21:52:20.521  INFO [gateway-zuul,,,] 31696 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 21 endpoint(s) beneath base path '/actuator'
+2020-07-22 21:52:20.692  INFO [gateway-zuul,,,] 31696 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-07-22 21:52:20.740  INFO [gateway-zuul,,,] 31696 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-07-22 21:52:20.807  INFO [gateway-zuul,,,] 31696 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-07-22 21:52:20.807  INFO [gateway-zuul,,,] 31696 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-07-22 21:52:20.945  INFO [gateway-zuul,,,] 31696 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-07-22 21:52:20.945  INFO [gateway-zuul,,,] 31696 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-07-22 21:52:21.154  INFO [gateway-zuul,,,] 31696 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-22 21:52:21.950  INFO [gateway-zuul,,,] 31696 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-07-22 21:52:21.950  INFO [gateway-zuul,,,] 31696 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-07-22 21:52:21.950  INFO [gateway-zuul,,,] 31696 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-07-22 21:52:21.950  INFO [gateway-zuul,,,] 31696 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-07-22 21:52:21.950  INFO [gateway-zuul,,,] 31696 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-07-22 21:52:21.951  INFO [gateway-zuul,,,] 31696 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-07-22 21:52:21.951  INFO [gateway-zuul,,,] 31696 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-07-22 21:52:22.261  INFO [gateway-zuul,,,] 31696 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-07-22 21:52:22.264  INFO [gateway-zuul,,,] 31696 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-07-22 21:52:22.266  INFO [gateway-zuul,,,] 31696 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-07-22 21:52:22.269  INFO [gateway-zuul,,,] 31696 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1595425942268 with initial instances count: 3
+2020-07-22 21:52:22.279  INFO [gateway-zuul,,,] 31696 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application GATEWAY-ZUUL with eureka with status UP
+2020-07-22 21:52:22.279  INFO [gateway-zuul,,,] 31696 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1595425942279, current=UP, previous=STARTING]
+2020-07-22 21:52:22.281  INFO [gateway-zuul,,,] 31696 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAY-ZUUL/LAPTOP-CNCLKMAV:gateway-zuul:28769: registering service...
+2020-07-22 21:52:22.312  INFO [gateway-zuul,,,] 31696 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 28769 (http) with context path ''
+2020-07-22 21:52:22.313  INFO [gateway-zuul,,,] 31696 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 28769
+2020-07-22 21:52:22.320  INFO [gateway-zuul,,,] 31696 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAY-ZUUL/LAPTOP-CNCLKMAV:gateway-zuul:28769 - registration status: 204
+2020-07-22 21:52:23.328  INFO [gateway-zuul,,,] 31696 --- [main] c.x.gatewayzuul.GatewayZuulApplication   : Started GatewayZuulApplication in 17.843 seconds (JVM running for 21.257)
+2020-07-22 21:52:23.547  INFO [gateway-zuul,,,] 31696 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as cd70bf36be63
+2020-07-22 21:52:23.597  INFO [gateway-zuul,,,] 31696 --- [http-nio-28769-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-22 21:52:23.597  INFO [gateway-zuul,,,] 31696 --- [http-nio-28769-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-22 21:52:23.615  INFO [gateway-zuul,,,] 31696 --- [http-nio-28769-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2020-07-22 21:57:21.953  INFO [gateway-zuul,,,] 31696 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-22 22:02:21.954  INFO [gateway-zuul,,,] 31696 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-22 22:06:57.364  WARN [gateway-zuul,,,] 31696 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=gateway-zuul, managementUrl=http://LAPTOP-CNCLKMAV:28769/actuator, healthUrl=http://LAPTOP-CNCLKMAV:28769/actuator/health, serviceUrl=http://LAPTOP-CNCLKMAV:28769/) at spring-boot-admin ([http://localhost:29091/instances]): I/O error on POST request for "http://localhost:29091/instances": Connect to localhost:29091 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:29091 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect. Further attempts are logged on DEBUG level
+2020-07-22 22:07:21.955  INFO [gateway-zuul,,,] 31696 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-22 22:12:21.956  INFO [gateway-zuul,,,] 31696 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-07-22 22:17:21.958  INFO [gateway-zuul,,,] 31696 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
