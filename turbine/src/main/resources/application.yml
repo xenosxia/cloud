@@ -4,6 +4,10 @@ server:
 spring:
   application:
     name: turbine
+  boot:
+    admin:
+      client:
+        url: http://localhost:29091
 
 eureka:
   client:
@@ -11,7 +15,7 @@ eureka:
       defaultZone: http://test:123456@localhost:28761/eureka/
 
   instance:
-    preferIpAddress: true #ÒÔIPµØÖ·×¢²áµ½·þÎñÖÐÐÄ£¬Ïà»¥×¢²áÊ¹ÓÃIPµØÖ·
+    preferIpAddress: true #ï¿½ï¿½IPï¿½ï¿½Ö·×¢ï¿½áµ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½à»¥×¢ï¿½ï¿½Ê¹ï¿½ï¿½IPï¿½ï¿½Ö·
 turbine:
   app-config: consumer-feign,consumer
   aggregator:

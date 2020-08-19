@@ -9,6 +9,12 @@ server:
 spring:
   application:
     name: consumer
+  boot:
+    admin:
+      client:
+        url: http://localhost:29091
+        username: test
+        password: 123456
 
 ribbon:
   eager-load:

@@ -9,6 +9,13 @@ server:
 spring:
   application:
     name: consumer-feign
+
+  boot:
+    admin:
+      client:
+        url: http://localhost:29091
+        username: test
+        password: 123456
 feign:
   hystrix:
     enabled: true
@@ -40,7 +47,7 @@ hystrix:
           enabled: true
         isolation:
           #配置请求隔离的方式，这里是默认的线程池方式。还有一种信号量的方式semaphore，使用比较少。
-          strategy: thread
+          strategy: THREAD
           thread:
             #方式执行的超时时间，默认为1000毫秒，在实际场景中需要根据情况设置
             timeoutInMilliseconds: 10000

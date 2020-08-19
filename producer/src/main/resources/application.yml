@@ -5,6 +5,17 @@ spring:
   application:
     name: producer
 
+  boot:
+    admin:
+      client:
+        url: http://localhost:29091
+        username: test
+        password: 123456
+  security:
+    user:
+      name: test
+      password: 123456
+
 eureka:
   client:
     serviceUrl:
@@ -21,3 +32,5 @@ management:
       cors:
         allowed-origins: "*"
         allowed-methods: "*"
+
+
